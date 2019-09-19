@@ -1,7 +1,7 @@
-#CLACK
-###포트폴리오를 위한 SLACK 유사 사이트 개발
+# CLACK
+### 포트폴리오를 위한 SLACK 유사 사이트 개발
 
-#개발 환경
+# 개발 환경
 
 - Python3.7
 - pycharm
@@ -11,7 +11,7 @@
     + Redis
     + Flask_Sockets
     
-#디렉토리 구조
+# 디렉토리 구조
 
 - common_module(sub module - https://github.com/skollhati/common_module)
     + 공용 모듈
