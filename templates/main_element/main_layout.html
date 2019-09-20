@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>CLACK - WOW!!!!</title>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+{% include 'main_element/main_top_bar.html' %}
+<div class="main-contents-frame">
+    {% block main_contents %}
+        test
+    {% endblock %}
+</div>
+
+{% include 'main_element/main_footer_bar.html' %}
+</body>
+</html>
