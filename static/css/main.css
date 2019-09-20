@@ -1,0 +1,23 @@
+html,body{
+    width:100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
+.label_span{
+    width:30px;
+    display: inline-block;
+    color:white;
+}
+#top-bar{
+    background-color: black;
+    width:100%;
+    height:30px;
+}
+.top-bar-item {
+    display: inline;
+    float: right;
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 0;
+}
