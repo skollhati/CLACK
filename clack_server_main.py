@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def html_test():
-    return render_template("index/index_contents.html")
+    return render_template("main/main_contents.html")
 
 
 
