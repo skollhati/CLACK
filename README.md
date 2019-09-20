@@ -10,6 +10,7 @@
     + SQLAlchemy
     + Redis
     + Flask_Sockets
+- BootStrap
     
 # 디렉토리 구조
 
@@ -28,6 +29,7 @@
 
 - static 
     + 정적파일 폴더
+        * bootstrap
         * css
         * js
         * images
