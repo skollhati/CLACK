@@ -103,5 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 common_module/
+venv_clack/
+venv/
 
 
