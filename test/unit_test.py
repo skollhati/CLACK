@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def html_test():
-    return render_template("index/index_layout.html")
+    return render_template("index/../templates/layout.html")
     # return "test"
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:

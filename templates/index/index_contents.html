@@ -1,7 +1,10 @@
-{% extends 'index/index_layout.html' %}
+{% extends 'layout.html' %}
 
+{% block header_bar %}
+    {% include 'index/index_header_bar.html' %}
+{% endblock %}
 
-{% block main_contents %}
+{% block index_contents %}
     <main role="main">
         <section class="jumbotron text-center">
             <div class="container">
@@ -26,4 +29,9 @@
     </main>
 
 
+{% endblock %}
+
+
+{% block footer_bar %}
+    {% include 'index/index_footer_bar.html' %}
 {% endblock %}
