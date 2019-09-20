@@ -2,17 +2,28 @@
 
 
 {% block main_contents %}
-    <div class="container">
-      <div class="page-header text-center">
-        <h1>Hi, CLACK</h1>
-      </div>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div class="page-header text-center">
+                    <h1 class="jumbotron-heading">Hi, CLACK</h1>
+                </div>
 
-{# Sign Up 관련 Email 검색 기존 자기가 검색했는지 여부 확인 #}
-      <p class="lead text-center">Sign Up CLACK NOW!!</p>
-        <p class="lead text-center">Check Email and Sign Up</p>
-    <form class="form-inline align-middle">
-         <input class="form-control my-2 my-sm-0 " type="email" placeholder="Email-Address" aria-label="Email">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-    </div>
+                {# Sign Up 관련 Email 검색 기존 자기가 검색했는지 여부 확인 #}
+                <p class="lead text-center">Sign Up CLACK NOW!!</p>
+                <p class="lead text-center">Check Email and Sign Up</p>
+                <form class="form-inline text-center align-content-center">
+                    <div class="align-content-center" style="width:100%;">
+                        <input class="form-control my-1" type="email" placeholder="Email Address" aria-label="Email">
+                        <button class="btn btn-outline-success my-1" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div>
+            {# CLACK 기능 설명 란이 들어갈 것#}
+        </div>
+    </main>
+
+
 {% endblock %}
