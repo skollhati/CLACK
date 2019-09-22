@@ -18,17 +18,20 @@ body {
   bottom: 0;
   left: 0;
   z-index: 100; /* Behind the navbar */
-  padding: 48px 0 0; /* Height of navbar */
+  padding: 60px 0 0; /* Height of navbar */
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+
 }
 
 .sidebar-sticky {
   position: relative;
   top: 0;
   height: calc(100vh - 48px);
+  background-color: #f5c6cb;
   padding-top: .5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  width:220px;
 }
 
 @supports ((position: -webkit-sticky) or (position: sticky)) {
@@ -62,17 +65,24 @@ body {
   text-transform: uppercase;
 }
 
+.userinfo{
+  width: 220px;
+  height: 60px;
+  background-color: white;
+}
 /*
  * Content
  */
 
 [role="main"] {
-  padding-top: 133px; /* Space for fixed navbar */
+  padding-top: 60px; /* Space for fixed navbar */
+  padding-left: 220px;
 }
 
 @media (min-width: 768px) {
   [role="main"] {
-    padding-top: 48px; /* Space for fixed navbar */
+    padding-top: 60px; /* Space for fixed navbar */
+    padding-left: 220px;
   }
 }
 
@@ -89,7 +99,7 @@ body {
 }
 
 .navbar .form-control {
-  padding: .75rem 1rem;
+  padding: 0;
   border-width: 0;
   border-radius: 0;
 }
@@ -103,4 +113,8 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.navbar{
+  padding: 0;
 }
