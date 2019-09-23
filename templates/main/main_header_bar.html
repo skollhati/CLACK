@@ -1,16 +1,69 @@
-<nav class="navbar navbar-dark fixed-top bg-dark">
-    <div class="py-2 px-3 userinfo">
-                    <div>
-                        Team Name
-                    </div>
-                    <div>
-                        (상태)ID
-                    </div>
+<nav class="navbar navbar-dark fixed-top bg-white d-inline-flex" >
+{#    <div class="d-flex" style="padding:0;margin: 0;" >#}
+        <div class="px-2 userinfo pt-1" style="position: relative;left:0;height:60px;">
+            <div class="font-weight-bold row">
+                <div class=" px-3" style="width:180px;">
+                    Team Name
                 </div>
-    <div>
-        <form class="form-inline">
-{#  타입 3가지 - message / channel 계열 / app      #}
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Out</button>
-        </form>
-    </div>
+                <div class="px-3" style="width:30px;">
+
+                    <img src="{{ url_for('static', filename='images/icons/iconmonstr-bell-thin-240.png') }}"
+                         class="bell-icon">
+                </div>
+            </div>
+            <div class="font-weight-bold">
+                <img src="{{ url_for('static', filename='images/icons/iconmonstr-circle-1-240.png') }}"
+                     class="sidebar-icons mx-1">ID
+            </div>
+        </div>
+        <div class="ml-0 flex-grow-1 d-flex" style="border-bottom: 1px solid black;">
+            <div class="channel-info flex-fill" >
+                <div class="ml-2">
+                    ID
+                </div>
+                <div class="row mx-1">
+                    <button class="btn px-0">
+                        <img class="channel-icon" src="{{ url_for('static',filename='google-icon/toggle/2x_web/ic_star_border_black_18dp.png') }}">
+                    </button>
+                    <button class="btn mx-0 px-1">|</button>
+                    <button class="btn px-0">
+                        <img class="channel-icon" src="{{ url_for('static',filename='google-icon/toggle/2x_web/ic_radio_button_checked_black_24dp.png') }}">
+                    </button>
+                </div>
+
+            </div>
+            <div class="config-menu" style="width:100px;">
+                <button class="btn mt-2 mx-0"style="width: 20px;">
+                    <img class="channel-icon"
+                         src="{{ url_for('static', filename='google-icon/alert/2x_web/ic_error_outline_black_18dp.png') }}">
+                </button>
+                <button class="btn mt-2 mx-0">
+                    <img class="channel-icon"
+                         src="{{ url_for('static', filename='images/icons/iconmonstr-gear-thin-240.png') }}">
+                </button>
+            </div>
+        </div>
+        <div class="contents-default-menu form-inline" style="width:280px;border-bottom: 1px solid black;height:60px;">
+            <input class="form-control my-1 d-none d-sm-none d-md-block" type="text" placeholder="Search" aria-label="Search" >
+            <button class="btn px-1">@</button>
+            <button class="btn px-1">
+                <img class="channel-icon" src="{{ url_for('static',filename='google-icon/toggle/2x_web/ic_star_border_black_18dp.png') }}">
+            </button>
+            <button class="btn  my-2 my-sm-0" type="submit">
+                <img class="channel-icon" src="{{ url_for('static', filename='images/icons/iconmonstr-menu-11-16.png') }}">
+            </button>
+        </div>
+
+{##}
+{#          타입 3가지 - message / channel 계열 / app#}
+{#                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Out</button>#}
+{##}
+{#                <input type="button" class="mr-3" style="background-image:'{{ url_for('static', filename='images/icons/iconmonstr-menu-11-16.png') }}' ">#}
+
+{#    </div>#}
+
+
+
+
 </nav>
+
