@@ -18,19 +18,9 @@
         </div>
         <div class="ml-0 flex-grow-1 d-flex" style="border-bottom: 1px solid black;">
             <div class="channel-info flex-fill" >
-                <div class="ml-2">
-                    ID
-                </div>
-                <div class="row mx-1">
-                    <button class="btn px-0">
-                        <img class="channel-icon" src="{{ url_for('static',filename='google-icon/toggle/2x_web/ic_star_border_black_18dp.png') }}">
-                    </button>
-                    <button class="btn mx-0 px-1">|</button>
-                    <button class="btn px-0">
-                        <img class="channel-icon" src="{{ url_for('static',filename='google-icon/toggle/2x_web/ic_radio_button_checked_black_24dp.png') }}">
-                    </button>
-                </div>
-
+                {% block type_header %}
+                    {% include 'main/header_channels.html' %}
+                {% endblock %}
             </div>
             <div class="config-menu" style="width:100px;">
                 <button class="btn mt-2 mx-0"style="width: 20px;">

@@ -13,11 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-{% block header_bar %}{% endblock %}
+{% include 'main/main_header_bar.html' %}
 
 <div class="main-contents-frame">
     <div class="container-fluid">
-        {% block side_bar %}{% endblock %}
+        {% include 'main/main_side_bar.html' %}
         {% block main_contents %}{% endblock %}
     </div>
 </div>
