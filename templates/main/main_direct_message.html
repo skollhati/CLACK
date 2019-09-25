@@ -1,12 +1,28 @@
 {% extends 'main/layout.html' %}
 
 {% block main_contents %}
-    <main role="main" class="col-md-9 col-lg-10">
-        <div id="d-message-window">
+    <script src="{{url_for('static',filename='js/message.js')}}"></script>
+    <main role="main" class="col-md-9 col-lg-10 d-flex">
+    <div class="d-flex">
+        <div id="d-message-window" class="flex-fill" style="">
+            {#  메시지는 JQuery로 찍어줘야함  - WebSocket 이용할 것 #}
+            <div class="d-inline-flex">
+                <div id="profile-image">
+
+                </div>
+                <div id="user-message">
+                    <div id="id-time">
+
+                    </div>
+                    <div id="message-block">
+
+                    </div>
+                </div>
+            </div>
 
         </div>
-        <div id="d-message-footer">
+        {% include 'main/message_input_bar.html' %}
+    </div>
 
-        </div>
     </main>
 {% endblock %}

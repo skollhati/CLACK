@@ -1,0 +1,19 @@
+<div id="d-message-footer" class="fixed-bottom d-inline-flex pt-4"
+     style="height:80px;border: 1px solid black;margin-left: 220px;">
+    <div style="width:50px;">
+        <button class="btn">
+            <img src="{{ url_for('static', filename='images/icons/iconmonstr-paperclip-thin-240.png') }}"
+                 class="sidebar-icons mx-1">
+        </button>
+    </div>
+    <div class="flex-fill">
+        <input type="text" class="form-control" placeholder="Message">
+    </div>
+    <div style="width:100px;">
+        <button class="btn">@</button>
+        <button class="btn">
+            <img src="{{ url_for('static', filename='images/icons/iconmonstr-smiley-thin-240.png') }}"
+                 class="sidebar-icons mx-1">
+        </button>
+    </div>
+</div>
