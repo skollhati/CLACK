@@ -5,7 +5,8 @@ app = Flask(__name__, static_url_path='/static')
 
 @app.route("/")
 def html_test():
-    return render_template("main/main_direct_message.html")
+    # return render_template("main/main_direct_message.html")
+    return render_template("index/signup.html")
 
 
 

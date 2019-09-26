@@ -1,0 +1,29 @@
+{% extends 'index/layout.html' %}
+
+{% block header_bar %}
+    {% include 'index/index_header_bar.html' %}
+{% endblock %}
+
+{% block index_contents %}
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div class="page-header text-center">
+                    <h1 class="jumbotron-heading">Hi, CLACK</h1>
+                </div>
+                <p class="lead text-center">Sign In CLACK NOW!!</p>
+                <p class="lead text-center">Already Sign Up User</p>
+            </div>
+        </section>
+        <div>
+            {# CLACK 기능 설명 란이 들어갈 것#}
+        </div>
+    </main>
+
+
+{% endblock %}
+
+
+{% block footer_bar %}
+    {% include 'index/index_footer_bar.html' %}
+{% endblock %}

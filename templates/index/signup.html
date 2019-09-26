@@ -1,0 +1,47 @@
+{% extends 'index/layout.html' %}
+
+{% block header_bar %}
+    {% include 'index/index_header_bar.html' %}
+{% endblock %}
+
+{% block index_contents %}
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <div class="page-header text-center">
+                    <h1 class="jumbotron-heading">Sign Up Please!</h1>
+                </div>
+
+                <p class="lead text-center">Sign Up</p>
+                <form class="justify-content-center row">
+                    <div class="form-group text-center col-sm-4 col-sm-offset-4">
+                        <input class="form-control my-1 align-self-center" type="text" placeholder="TeamName" aria-label="TeamName">
+                        <input class="form-control my-1 align-self-center" type="email" placeholder="Email Address" aria-label="Email" >
+                        <input class="form-control my-1 align-self-center" type="text" placeholder="Password" aria-label="Password">
+                        <input class="form-control my-1 align-self-center" type="text" placeholder="CheckPassword" aria-label="CheckPassword" >
+                        <input class="form-control my-1 align-self-center" type="text" placeholder="NickName" aria-label="NickName">
+                        <div class="btn-group btn-group-toggle col-sm-12" data-toggle="buttons">
+                            <label class="btn btn-outline-dark">
+                                <input type="radio" name="gender-radio" id="gender-man">man
+                            </label>
+                            <label class="btn btn-outline-dark">
+                                <input type="radio" name="gender-radio" id="gender-man">woman
+                            </label>
+                        </div>
+                        <button class="btn btn-outline-success my-1 col-sm-12" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div>
+            {# CLACK 기능 설명 란이 들어갈 것#}
+        </div>
+    </main>
+
+
+{% endblock %}
+
+
+{% block footer_bar %}
+    {% include 'index/index_footer_bar.html' %}
+{% endblock %}
