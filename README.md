@@ -21,11 +21,13 @@
         * Singleton
         * JsonConverter(csv to json)
         * enum
-- model
-    + 로직
-    
-- routes
-    + url mapping
+- app
+    + models
+        + 로직
+    + routes
+        + url mapping
+    + orm
+        + db mapping
 
 - static 
     + 정적파일 폴더
