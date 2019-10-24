@@ -1,10 +1,8 @@
 from app.orm.orm_user import *
-
+from . import session
 class Accounts:
 
     def __init__(self):
-        #TODO: Redis Instance 가져야함 - Session 저장용
-        #TODO: Session 생성해주는 부분도 필요함
         pass
 
     def sign_in(self, team, email, password):
@@ -14,11 +12,12 @@ class Accounts:
         :param password: 계정 비밀번호
         :return: bool(존재 - True / 없음 - False)
         """
-        if User.query.filter(and_(User.password == password, User.email == email, User.team==team)).first() is not None:
+        user = User.query.filter(and_(User.password == password, User.email == email, User.team == team)).first()
+        if user is not None:
+            session.set(team, email, user.nickname)
             return True
         else:
             return False
-
 
     def team_check(self, team, email):
         """
@@ -35,7 +34,7 @@ class Accounts:
 
     def sign_up(self, team, email, password, nickname):
         #TODO: NickName Password 추가 입력 후 가입
-        pass
+        db.session.add(User(team, email, nickname, password))
 
     def sign_out(self, team, email, token):
         #TODO: 로그아웃. Redis 세션에서 삭제
