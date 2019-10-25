@@ -1,5 +1,5 @@
 from app.orm.orm_user import *
-from . import session
+
 class Accounts:
 
     def __init__(self):
@@ -14,7 +14,6 @@ class Accounts:
         """
         user = User.query.filter(and_(User.password == password, User.email == email, User.team == team)).first()
         if user is not None:
-            session.set(team, email, user.nickname)
             return True
         else:
             return False
